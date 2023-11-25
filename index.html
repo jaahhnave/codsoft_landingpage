@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Walk Wonders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-shop"></i>
+                <h1>Walk Wonders</h1>
+            </div>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">orders</a></li>
+                <li><a href="#">contact</a></li>
+                
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="div-text">
+                <div class="div-img">
+                    <img id="big-img" src="a.png" alt="">
+                </div>
+                <span>Match Your Outfit</span>
+                <h3>All Your </h3>
+
+                <h1>Styles Are Here</h1>
+                <p>Welcome to Walk Wonders,the leading that empowers entrepreneurs and business of all sizes and styles to sell our products online<br>
+                View and buy a stunning products online that reflects your unique personality and style.</p>
+                    <a href="#" class="btn">Buy Now</a>
+            </div>
+
+            <div class="small-img">
+                <img onclick="myShoe(this.src)" src="a.png" alt="#">
+                <img onclick="myShoe(this.src)" src="c.png" alt="#">
+                <img onclick="myShoe(this.src)" src="d.png" alt="#">
+                <img onclick="myShoe(this.src)" src="e.png" alt="#">
+                
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let bigImage=document.getElementById('big-img');
+
+        function myShoe(shoe){
+            bigImage.src=shoe
+        }
+    </script>
+</body>
+</html>
